@@ -1,0 +1,40 @@
+// compress: true
+
+@import 'blocks/variables';
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background-color: #132FA3;
+    color: @black;
+    font-size: 22px;
+}
+
+.container {
+    max-width: @width_main_container;
+    margin: 0 auto;
+    width: calc(100% - 10px);
+}
+
+.main {
+    padding: 357px 0 0 0;
+}
+
+.section {
+    padding: 75px 0;
+}
+
+/* Blocks */
+@import 'blocks/header';
+@import 'blocks/comprehensive';
