@@ -24,7 +24,7 @@
     font-weight: 400;
     color: @white;
     padding: 32px 0 82px 0;
-    font-family: "Nunito Sans", sans-serif;
+    line-height: 1.5;
 }
 
 
@@ -75,20 +75,95 @@
 
 .comprehensive__content_box2 {
     padding: 124px 0 0 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .comprehensive__content_box2__item {
+    position: relative;
     display: block;
-    width: 596px;
+    width: 557px;
     height: 391px;
-    background-color: #E86116;
-    border-radius: 100px;
+    background-color: @red;
+    border-radius: 32px;
 }
 
-.comprehensive__content_box2__item--white {
+.comprehensive__content_box2__item--bg {
+    padding: 40px 0 0 40px;
+    top: 104px;
+    position: absolute;
     display: block;
-    width: 596px;
+    width: 557px;
     height: 287px;
+}
+
+.comprehensive__content_box2__item--bgwhite {
+    color: @black;
     background-color: @white;
+    border-radius: 32px;
+}
+
+.comprehensive__content_box2__item_title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.comprehensive__content_box2__item_text {
+    padding: 24px 0 40px 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.comprehensive__content_box2__round {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    width: 180px;
+    height: 37px;
+    color: @white;
+    background-color: @red;
     border-radius: 100px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.comprehensive__content_box2__round--centr {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+}
+
+.comprehensive__content_box2__round--width-left {
+    width: 234px;
+}
+
+.comprehensive__content_box2__round--width-right {
+    width: 162px;
+}
+
+.comprehensive__content_box2__item_btn {
+    left: 514px;
+    top: 41px;
+    background-image: url("../img/png/Arrow_link.png");
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-position: 0;
+    background-repeat: no-repeat;
+}
+
+.comprehensive__content_box2__item-green {
+    background-color: @green;
+}
+
+.comprehensive__content_box2__round-green {
+    background-color: @green;
+}
+
+.comprehensive__content_box2__round-green--width-up {
+    width: 182px;
+}
+
+.comprehensive__content_box2__round-green--width-down {
+    width: 234px;
 }
