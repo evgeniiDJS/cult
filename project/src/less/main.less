@@ -21,9 +21,20 @@ body {
     font-size: 22px;
 }
 
+.container {
+    max-width: @width_main_container;
+    margin: 0 auto;
+    width: calc(100% - 10px);
+}
+
+.main {
+    padding: 357px 0 0 0;
+}
+
 .section {
     padding: 75px 0;
 }
 
 /* Blocks */
 @import 'blocks/header';
+@import 'blocks/comprehensive';
