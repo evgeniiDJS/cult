@@ -16,10 +16,12 @@ body {
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    background-color: #132FA3;
+    background-color: @white;
     color: @black;
     font-size: 22px;
+    position: relative;
 }
+
 
 .container {
     max-width: @width_main_container;
@@ -28,14 +30,215 @@ body {
 }
 
 .main {
-    padding: 357px 0 0 0;
+    padding: 0;
 }
 
-.section {
+
+/* FONT */
+.big_title-size-color {
+    font-weight: bold;
+    font-size: 64px;
+    color: @white;
+}
+
+.big_title_description {
+    opacity: 0.8;
+    font-size: 16px;
+    font-weight: 400;
+    color: @white;
+    padding: 32px 0 82px 0;
+    line-height: 1.5;
+}
+
+
+
+.middle_title-size-color {
+    font-size: 48px;
+    font-weight: bold;
+    color: @white;
+}
+
+.pattern__titles--h3 {
+    font-size: 48px;
+    font-weight: bold;
+    padding: 0 0 43px 0;
+}
+
+
+/* SECTION */
+.section--comprehensive,
+.section--forming {
     padding: 75px 0;
 }
+
+.section--nordcore {
+    padding: 119px 0;
+    background-color: #F5F5F5;
+    border-radius: 0 0 50px 50px ;
+}
+
+.section--swift {
+    padding: 119px 0;
+    background-color: #EDEDED;
+    border-radius: 0 050px 50px;
+}
+
+.section--cases {
+    padding: 119px 0;
+    background-color: #142255;
+    border-radius: 0 0 50px 50px;
+}
+
+.section--media {
+    padding: 119px 0;
+    background-color: #8D71FF;
+}
+
+.section--profession {
+    padding: 119px 0;
+    background-image: url("../img/png/professionalFone.png");
+    background-size: 100% 800px;
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+}
+
+
+/* background-image */
+.arrow_btn {
+    background-image: url("../img/png/Arrow_link.png");
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+}
+
+.block--fone {
+    background-image: url("../img/png/foneBG.png");
+    background-size: 100% 2065px;
+    width: 100%;
+    height: 2065px;
+    background-repeat: no-repeat;
+}
+
+
+/* BUTTON */
+.pattern_default_btn {
+    padding: 10px;
+    display: block;
+    width: 197px;
+    height: 42px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pattern__content_button {
+    margin: 23px 0 0 0;
+    padding: 5px;
+    display: block;
+    width: 100%;
+    height: 42px;
+    background-color: @white;
+    border-radius: 50px;
+    text-align: center;
+}
+
+
+/* PATTERN BLOCK */
+
+/* Swift Nordcore */
+.pattern__items {
+    position: relative;
+    width: 560px;
+    height: 293px;
+    display: block;
+}
+
+.pattern__item_picture {
+    top: 1px;
+    position: absolute;
+    background-size: 560px 144px;
+    background-position: 0;
+    background-repeat: no-repeat;
+    width: 565px;
+    height: 144px;
+    border-radius: 32px 32px 0 0;
+}
+
+/* CASES & MEDIA */
+
+.pattern__block {
+    position: relative;
+    width: 370px;
+    height: 368px;
+    display: block;
+}
+
+.pattern__block_picture {
+    top: 0;
+    position: absolute;
+    background-size: 370px 368px;
+    background-position: 0 -4px;
+    background-repeat: no-repeat;
+    width: 370px;
+    height: 368px;
+    border-radius: 32px;
+    background-image: url("../img/png/Fixed.png");
+}
+
+.pattern__block_picture--electric {
+    top: 34px;
+    left: 17px;
+    position: absolute;
+    background-size: 165px 33px;
+    background-position: 0;
+    background-repeat: no-repeat;
+    width: 165px;
+    height: 33px;
+    border-radius: 32px;
+    background-image: url("../img/png/electric.png");
+}
+
+.pattern__block_picture--electric--green {
+    top: 34px;
+    left: 17px;
+    position: absolute;
+    background-size: 165px 33px;
+    background-position: 0;
+    background-repeat: no-repeat;
+    width: 165px;
+    height: 33px;
+    border-radius: 32px;
+    background-image: url("../../img/png/electric__green.png");
+}
+
+.pattern__block__item {
+    top: 218px;
+    position: relative;
+    width: 370px;
+    height: 154px;
+    border-radius: 32px;
+    background-color: @white;
+    color: @black;
+}
+
+.pattern__block__item_text {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 50px 0 0 50px;
+}
+
+
+
 
 /* Blocks */
 @import 'blocks/header';
 @import 'blocks/comprehensive';
 @import 'blocks/forming';
+@import 'blocks/nordcore';
+@import 'blocks/swift';
+@import 'blocks/cases';
+@import 'blocks/media';
+@import 'blocks/profession';
