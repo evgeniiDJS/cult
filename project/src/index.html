@@ -11,11 +11,17 @@
     <title>CULT</title>
 </head>
 <body>
-    @@include('blocks/header.html')
-    <main class="main">
+   <div class="block--fone">
+        @@include('blocks/header.html')
         @@include('blocks/comprehensive.html')
         @@include('blocks/forming.html')
-        
+   </div>
+    <main class="main">
+        @@include('blocks/nordcore.html')
+        @@include('blocks/swift.html')
+        @@include('blocks/cases.html')
+        @@include('blocks/media.html')
+        @@include('blocks/profession.html')
     </main>
 
     <script src="./js/index.bundle.js"></script>
