@@ -1,15 +1,101 @@
 // main: ../main.less
 
+.phone-320px,
+.burger-menu-320px,
+.header__block-up--logo--320px,
+.section--metodologia,
+.cases__select--320px {
+    display: none;
+}
 
 @media all and (max-width: 767px) {
     .header__block-down,
+    .header__line,
     .header__block-up__input,
-    .header__block-up__select {
+    .header__block-up__select,
+    .header__block-up__contact_phone,
+    .arrow_btn,
+    .comprehensive__content_box2__round--centr,
+    .comprehensive_information,
+    .forming__content_box2,
+    .display-320px--none,
+    .director__content_boxs-arrow {
         display: none;
+    }
+
+    .section--comprehensive,
+    .section--swift,
+    .section--cases,
+    .section--profession,
+    .section--comment,
+    .section--director,
+    .section--consultation,
+    .section--footer {
+        padding: 50px 0;
+    }
+
+    .header,
+    .comprehensive__content_box2 {
+        padding: 0;
+    }
+
+    .header__block-up__contact {
+        width: 161px;
+    }
+
+    .header__block-up--logo--320px {
+        background-image: url("../img/png/Logo_header.png");
+        background-size: 50%;
+        background-position: 15px 10px;
+        background-repeat: no-repeat;
+        width: 70px;
+        height: 54px;
+        border-radius: 100px;
+        background-color: @white;
+        display: block;
+    }
+
+    .header__block-up__contact_mail {
+        width: 46px;
+        height: 46px;
+        background-size: 50%;
+        background-position: 12px 14px; 
+    }
+
+    .phone-320px {
+        background-image: url("../img/png/basil_phone-solid.png");
+        background-size: 50%;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        width: 46px;
+        height: 46px;
+        border-radius: 100px;
+        background-color: #D5E2FC;
+        display: block;
+    }
+    .burger-menu-320px {
+        background-image: url("../img/png/burger_menu.png");
+        background-size: 100%;
+        background-position: -1px 0;
+        background-repeat: no-repeat;
+        width: 46px;
+        height: 46px;
+        border-radius: 100px;
+        background-color: #D5E2FC;
+        display: block;
     }
 
     .big_title-size-color {
         font-size: 36px;
+    }
+
+    .big_title_description {
+        padding: 60px 0 0 0;
+    }
+    .big_title_description--pd320px{
+        display: block;
+        width: 55%;
+        margin: 20px 0 0 0;
     }
 
     .comprehensive_title-block {
@@ -17,4 +103,211 @@
         height: 48px 
     }
 
+    .comprehensive__content_box2 {
+        display: block;
+        width: 100%;
+    }
+
+    .comprehensive__content_box2__item {
+        width: 100%;
+        height: 381px;
+        margin: 135px 0;
+    }
+
+    .comprehensive__content_box2__item--bg {
+        width: 100%;
+        height: 404px;
+    }
+
+    .comprehensive__content_box2__item_title {
+        font-size: 26px;
+    }
+
+    .comprehensive__content_box2__item_text {
+        font-size: 13px;
+    }
+
+    .comprehensive__content_box2__item-flex {
+        display: block;
+    }
+
+    .comprehensive__content_box2__round {
+        margin: 5px 0;
+    }
+    
+
+    .forming__content_btn {
+        top: 80%;
+        left: 0;
+        width: 288px;
+        height: 41px;
+        font-size: 13px;
+        font-weight: bold;
+        background-position: 222px 10px;
+    }
+
+    .middle_title-size-color {
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    .forming_title-block {
+        width: 356px;
+        height: 51px;
+        padding: 10px 0;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .forming_description {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .block--fone {
+        background-size: 100% 2000px;
+        height: 2000px;
+    }
+
+    .section--nordcore {
+        padding: 50px 0;
+    }
+
+    .pattern__items {
+        height: 277px;
+    }
+
+    .pattern__items,
+    .pattern__item_picture,
+    .nordcore__item {
+        width: 100%;
+    }
+
+    .nordcore__item {
+        padding: 0 0 0 20px;
+    }
+
+    .nordcore__item_title {
+        padding: 20px 0 0 0;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .nordcore__item_text {
+        padding: 5px 0;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    
+    .cases__select--320px {
+        display: block;
+        background-color: #7F67E1;
+        color: @white;
+        border-radius: 16px;
+        padding: 0 40px;
+        width: 288px;
+        height: 53px;
+        border: 0;
+        font-size: 16px;
+        outline: none;
+        margin: 10px 0 40px 0;
+    }
+
+    .pattern__titles--h3 {
+        padding: 0;
+    }
+
+    .cases__select--320px-option {
+        padding: 30px;
+    }
+
+    .profession__box1 {
+        width: 100%;
+        display: block;
+        margin: 200px 0 0 0;
+    }
+
+    .pattern_default_btn {
+        margin: 10px 0;
+    }
+
+    .comment__box1 {
+        display: block;
+    }
+
+    .comment__block,
+    .comment__block_picture,
+    .comment__block__item {
+        width: 100%;
+    }
+
+    .comment__block {
+        margin: 272px 0;
+        height: 450px;
+    }
+    
+    .comment__block__item_text1 {
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    .comment__block__item_text2 {
+        font-size: 17px;
+    }
+
+    .comment__block_picture {
+        height: 100%;
+    }
+
+    .comment__block__item {
+        height: 100%;
+    }
+
+    .director__content_box1 {
+        padding: 0;
+    }
+
+    .director__content_box2__items,
+    .director-box2__block_picture,
+    .director-box2__block__item {
+        width: 100%;
+        background-size: 100%;
+    }
+
+    .big_title_description_consultation--320px {
+        width: 60%;
+    }
+
+    .consultation__boxs {
+        display: block;
+    }
+
+    .consultation__contacts {
+        width: 100%;
+    }
+
+    .consultation__contacts_count {
+        display: block;
+    }
+
+    .consultation__contacts_count_default {
+        margin: 10px 0 0 0;
+    }
+    
+    .consultation__box2 {
+        margin: 200px 0 0 0;
+    }
+
+    .form {
+        width: 100%;
+        height: 560px;
+    }
+
+    .footer__content {
+        display: block;
+    }
+
+    .footer__content--flex {
+        margin: 20px 0;
+    }
 }
